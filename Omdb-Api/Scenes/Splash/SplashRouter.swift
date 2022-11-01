@@ -8,7 +8,15 @@
 import UIKit
 
 class SplashRouter: BaseRouter {
-
+    
     weak var viewController: UIViewController?
-
+    
+    func routeToMain() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            let vc = MainViewController()
+            let nav = BaseNavigationController(rootViewController: vc)
+            self.viewController?.present(nav, animated: true)
+        }
+    }
+    
 }

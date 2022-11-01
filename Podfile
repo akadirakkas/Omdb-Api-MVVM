@@ -13,6 +13,7 @@ target 'Omdb-Api' do
 	pod 'Firebase/Analytics'
 	pod 'FirebaseMessaging'
 	pod 'FirebaseRemoteConfig'
+	pod 'NVActivityIndicatorView'
 
  post_install do |installer|
     installer.pods_project.targets.each do |target|

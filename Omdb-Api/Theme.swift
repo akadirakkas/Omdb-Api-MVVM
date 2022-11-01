@@ -18,9 +18,8 @@ struct Theme {
         fileprivate static let shared = Color()
 
         let accent = UIColor(named: "AccentColor") ?? .hex("#CCE2FC")
-        let tabSelect = UIColor(named: "TabSelect") ?? .hex("#4A709D")
-        let tabUnselect = UIColor(named: "tabUnselect") ?? .hex("#98C0EE")
-
+        let background = UIColor(named: "VİewBG") ?? .hex("#FCFCFC")
+        let textColor = UIColor(named: "TextColor") ?? .hex("#4C72A1")
         private init() {}
     }
 

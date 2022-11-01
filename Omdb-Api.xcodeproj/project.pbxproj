@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1308F60A29102021002D0212 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308F60929102021002D0212 /* Movie.swift */; };
+		1308F60C2910203A002D0212 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308F60B2910203A002D0212 /* MovieDetail.swift */; };
+		1308F60E29102051002D0212 /* MovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308F60D29102051002D0212 /* MovieResult.swift */; };
+		1308F61129102192002D0212 /* OMDbEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308F61029102192002D0212 /* OMDbEndpoint.swift */; };
+		1308F61329102249002D0212 /*  Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308F61229102249002D0212 /*  Int+Extension.swift */; };
+		13177F22290E688900E3D107 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13177F1E290E688900E3D107 /* MainRouter.swift */; };
+		13177F23290E688900E3D107 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13177F1F290E688900E3D107 /* MainViewController.swift */; };
+		13177F24290E688900E3D107 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13177F20290E688900E3D107 /* MainViewModel.swift */; };
+		13177F25290E688900E3D107 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13177F21290E688900E3D107 /* MainViewController.xib */; };
+		131B4138291024C0004816F8 /* OmdbRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131B4137291024C0004816F8 /* OmdbRequest.swift */; };
+		135DFEA8290E7BA80015B2A3 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135DFEA6290E7BA80015B2A3 /* MainTableViewCell.swift */; };
+		135DFEA9290E7BA80015B2A3 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135DFEA7290E7BA80015B2A3 /* MainTableViewCell.xib */; };
 		1385BBBE290D59D0004D1A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BBBD290D59D0004D1A55 /* AppDelegate.swift */; };
 		1385BBC0290D59D0004D1A55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BBBF290D59D0004D1A55 /* SceneDelegate.swift */; };
 		1385BBC7290D59D2004D1A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1385BBC6290D59D2004D1A55 /* Assets.xcassets */; };
@@ -27,10 +39,27 @@
 		1385BBFD290D5CB1004D1A55 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BBF9290D5CB1004D1A55 /* SplashViewModel.swift */; };
 		1385BBFE290D5CB1004D1A55 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1385BBFA290D5CB1004D1A55 /* SplashViewController.xib */; };
 		13DA6842290D64EB0054C010 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13DA6841290D64EB0054C010 /* GoogleService-Info.plist */; };
+		13E85ED529111A170023B137 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E85ED129111A170023B137 /* DetailRouter.swift */; };
+		13E85ED629111A170023B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E85ED229111A170023B137 /* DetailViewController.swift */; };
+		13E85ED729111A170023B137 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E85ED329111A170023B137 /* DetailViewModel.swift */; };
+		13E85ED829111A170023B137 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E85ED429111A170023B137 /* DetailViewController.xib */; };
+		13E85EDB291125EE0023B137 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E85EDA291125EE0023B137 /* FirebaseManager.swift */; };
 		7340F0E66B3A58290763D9F7 /* Pods_Omdb_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE33238FC361BFDECA98C09F /* Pods_Omdb_Api.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1308F60929102021002D0212 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1308F60B2910203A002D0212 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		1308F60D29102051002D0212 /* MovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResult.swift; sourceTree = "<group>"; };
+		1308F61029102192002D0212 /* OMDbEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDbEndpoint.swift; sourceTree = "<group>"; };
+		1308F61229102249002D0212 /*  Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Int+Extension.swift"; sourceTree = "<group>"; };
+		13177F1E290E688900E3D107 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		13177F1F290E688900E3D107 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		13177F20290E688900E3D107 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		13177F21290E688900E3D107 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		131B4137291024C0004816F8 /* OmdbRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbRequest.swift; sourceTree = "<group>"; };
+		135DFEA6290E7BA80015B2A3 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		135DFEA7290E7BA80015B2A3 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		1385BBBA290D59D0004D1A55 /* Omdb-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omdb-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1385BBBD290D59D0004D1A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1385BBBF290D59D0004D1A55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +82,11 @@
 		1385BBF9290D5CB1004D1A55 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		1385BBFA290D5CB1004D1A55 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		13DA6841290D64EB0054C010 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		13E85ED129111A170023B137 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		13E85ED229111A170023B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		13E85ED329111A170023B137 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		13E85ED429111A170023B137 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		13E85EDA291125EE0023B137 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		580DF1A1024BDBCF7CF8A4F1 /* Pods-Omdb-Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omdb-Api.release.xcconfig"; path = "Target Support Files/Pods-Omdb-Api/Pods-Omdb-Api.release.xcconfig"; sourceTree = "<group>"; };
 		C8BBB917B26BC734C8D2F718 /* Pods-Omdb-Api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omdb-Api.debug.xcconfig"; path = "Target Support Files/Pods-Omdb-Api/Pods-Omdb-Api.debug.xcconfig"; sourceTree = "<group>"; };
 		FE33238FC361BFDECA98C09F /* Pods_Omdb_Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omdb_Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +104,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1308F60729102001002D0212 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1308F60F29102164002D0212 /* OMDbApi */,
+				1308F60829102009002D0212 /* Model */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		1308F60829102009002D0212 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1308F60929102021002D0212 /* Movie.swift */,
+				1308F60B2910203A002D0212 /* MovieDetail.swift */,
+				1308F60D29102051002D0212 /* MovieResult.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1308F60F29102164002D0212 /* OMDbApi */ = {
+			isa = PBXGroup;
+			children = (
+				1308F61029102192002D0212 /* OMDbEndpoint.swift */,
+				131B4137291024C0004816F8 /* OmdbRequest.swift */,
+			);
+			path = OMDbApi;
+			sourceTree = "<group>";
+		};
+		13415DD3290D752A00050A15 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				135DFEA5290E7B640015B2A3 /* MainCell */,
+				13177F1E290E688900E3D107 /* MainRouter.swift */,
+				13177F1F290E688900E3D107 /* MainViewController.swift */,
+				13177F20290E688900E3D107 /* MainViewModel.swift */,
+				13177F21290E688900E3D107 /* MainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		135DFEA5290E7B640015B2A3 /* MainCell */ = {
+			isa = PBXGroup;
+			children = (
+				135DFEA6290E7BA80015B2A3 /* MainTableViewCell.swift */,
+				135DFEA7290E7BA80015B2A3 /* MainTableViewCell.xib */,
+			);
+			path = MainCell;
+			sourceTree = "<group>";
+		};
 		1385BBB1290D59D0004D1A55 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +174,8 @@
 		1385BBBC290D59D0004D1A55 /* Omdb-Api */ = {
 			isa = PBXGroup;
 			children = (
+				13E85ED9291125DB0023B137 /* Managers */,
+				1308F60729102001002D0212 /* Network */,
 				1385BBD1290D59F3004D1A55 /* Application */,
 				1385BBEA290D5C00004D1A55 /* Extensions */,
 				1385BBE7290D5BC7004D1A55 /* Helpers */,
@@ -173,6 +258,7 @@
 				1385BBEC290D5C35004D1A55 /* UIApplication+Extensions.swift */,
 				1385BBED290D5C35004D1A55 /* UIColor+Extensions.swift */,
 				1385BBEF290D5C35004D1A55 /* UIFont+Extensions.swift */,
+				1308F61229102249002D0212 /*  Int+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,6 +266,8 @@
 		1385BBF5290D5C92004D1A55 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				13E85ED029111A010023B137 /* Detail */,
+				13415DD3290D752A00050A15 /* Main */,
 				1385BBF6290D5C9D004D1A55 /* Splash */,
 			);
 			path = Scenes;
@@ -194,6 +282,25 @@
 				1385BBFA290D5CB1004D1A55 /* SplashViewController.xib */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		13E85ED029111A010023B137 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				13E85ED129111A170023B137 /* DetailRouter.swift */,
+				13E85ED229111A170023B137 /* DetailViewController.swift */,
+				13E85ED329111A170023B137 /* DetailViewModel.swift */,
+				13E85ED429111A170023B137 /* DetailViewController.xib */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		13E85ED9291125DB0023B137 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				13E85EDA291125EE0023B137 /* FirebaseManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		67EAC9CE2F8A2ED5A7532047 /* Pods */ = {
@@ -273,11 +380,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135DFEA9290E7BA80015B2A3 /* MainTableViewCell.xib in Resources */,
 				1385BBDA290D5A98004D1A55 /* Poppins-SemiBold.ttf in Resources */,
 				1385BBFE290D5CB1004D1A55 /* SplashViewController.xib in Resources */,
 				1385BBDC290D5A98004D1A55 /* Poppins-Medium.ttf in Resources */,
+				13177F25290E688900E3D107 /* MainViewController.xib in Resources */,
 				1385BBDB290D5A98004D1A55 /* Poppins-Bold.ttf in Resources */,
 				1385BBC7290D59D2004D1A55 /* Assets.xcassets in Resources */,
+				13E85ED829111A170023B137 /* DetailViewController.xib in Resources */,
 				1385BBD9290D5A98004D1A55 /* Poppins-Regular.ttf in Resources */,
 				13DA6842290D64EB0054C010 /* GoogleService-Info.plist in Resources */,
 			);
@@ -332,19 +442,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E85ED529111A170023B137 /* DetailRouter.swift in Sources */,
 				1385BBF1290D5C35004D1A55 /* UIApplication+Extensions.swift in Sources */,
+				13177F22290E688900E3D107 /* MainRouter.swift in Sources */,
+				1308F60A29102021002D0212 /* Movie.swift in Sources */,
+				13E85ED729111A170023B137 /* DetailViewModel.swift in Sources */,
 				1385BBE4290D5B08004D1A55 /* BaseViewController.swift in Sources */,
 				1385BBE9290D5BE2004D1A55 /* Theme.swift in Sources */,
 				1385BBFC290D5CB1004D1A55 /* SplashViewController.swift in Sources */,
 				1385BBE6290D5B08004D1A55 /* BaseNavigationController.swift in Sources */,
+				1308F60E29102051002D0212 /* MovieResult.swift in Sources */,
+				135DFEA8290E7BA80015B2A3 /* MainTableViewCell.swift in Sources */,
 				1385BBE5290D5B08004D1A55 /* BaseRouter.swift in Sources */,
 				1385BBE3290D5B08004D1A55 /* BaseViewModel.swift in Sources */,
+				13E85ED629111A170023B137 /* DetailViewController.swift in Sources */,
 				1385BBF2290D5C35004D1A55 /* UIColor+Extensions.swift in Sources */,
+				13E85EDB291125EE0023B137 /* FirebaseManager.swift in Sources */,
+				1308F61329102249002D0212 /*  Int+Extension.swift in Sources */,
+				13177F23290E688900E3D107 /* MainViewController.swift in Sources */,
+				1308F60C2910203A002D0212 /* MovieDetail.swift in Sources */,
+				131B4138291024C0004816F8 /* OmdbRequest.swift in Sources */,
 				1385BBFD290D5CB1004D1A55 /* SplashViewModel.swift in Sources */,
 				1385BBF4290D5C35004D1A55 /* UIFont+Extensions.swift in Sources */,
+				1308F61129102192002D0212 /* OMDbEndpoint.swift in Sources */,
 				1385BBBE290D59D0004D1A55 /* AppDelegate.swift in Sources */,
 				1385BBFB290D5CB1004D1A55 /* SplashRouter.swift in Sources */,
 				1385BBC0290D59D0004D1A55 /* SceneDelegate.swift in Sources */,
+				13177F24290E688900E3D107 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
