@@ -95,6 +95,10 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.router.routeToDetail(movieId: viewModel.moviesTest[indexPath.row].imdbID!)
+        FirebaseManager.shared.logFilmDetails(
+            title: viewModel.moviesTest[indexPath.row].title ?? "",
+            year: viewModel.moviesTest[indexPath.row].year ?? ""
+        )
     }
     
 }

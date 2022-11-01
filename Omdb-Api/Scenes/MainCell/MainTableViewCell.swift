@@ -24,7 +24,7 @@ class MainTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-//        movieNameLabel.font = UIFont.themeFont(ofSize: 16, weight: .medium)
+        movieNameLabel.font = UIFont.themeFont(ofSize: 16, weight: .medium)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

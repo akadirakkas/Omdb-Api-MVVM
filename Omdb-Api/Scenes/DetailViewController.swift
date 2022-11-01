@@ -9,9 +9,8 @@ import UIKit
 
 class DetailViewController: BaseViewController {
 
-    let viewModel = DetailViewModel(state: .init())
+    let viewModel : DetailViewModel
     let router = DetailRouter()
-    private(set) var movieId: String 
     
     // MARK: - IBOutlets
     @IBOutlet weak var testLabel: UILabel!
@@ -19,7 +18,7 @@ class DetailViewController: BaseViewController {
     
     // MARK: - Initialization
     init(movieId: String) {
-        self.movieId = movieId
+        self.viewModel = DetailViewModel(state: .init(moviId: movieId))
         super.init()
     }
     
@@ -35,7 +34,7 @@ class DetailViewController: BaseViewController {
         router.viewController = self
         setupUI()
         configureViewModel()
-       print("movieee id is: \(movieId)")
+        viewModel.movieDetail()
     }
 
     // MARK: - Setup

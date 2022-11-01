@@ -48,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13038C602911442C00E17BAC /* Omdb-Api.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Omdb-Api.entitlements"; sourceTree = "<group>"; };
 		1308F60929102021002D0212 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1308F60B2910203A002D0212 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		1308F60D29102051002D0212 /* MovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResult.swift; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		1385BBBC290D59D0004D1A55 /* Omdb-Api */ = {
 			isa = PBXGroup;
 			children = (
+				13038C602911442C00E17BAC /* Omdb-Api.entitlements */,
 				13E85ED9291125DB0023B137 /* Managers */,
 				1308F60729102001002D0212 /* Network */,
 				1385BBD1290D59F3004D1A55 /* Application */,
@@ -595,6 +597,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Omdb-Api/Omdb-Api.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8QK476L9H;
@@ -627,6 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Omdb-Api/Omdb-Api.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S8QK476L9H;
