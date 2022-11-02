@@ -10,6 +10,11 @@ This is a demo app which use OMdb api
 
 - Check internet connection
 
+- Firebase remote config
+
+- Firebase log event 
+
+- Firebase push notifications
 
 
 
@@ -30,4 +35,4 @@ This is a demo app which use OMdb api
 
 - **Alamofire** for networking
 - **SDWebImage** for image caching
-- **Firebase** for analytics, push notifications
+- **Firebase** for analytics, push notifications, log event
