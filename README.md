@@ -8,6 +8,7 @@ This is a demo app which use OMdb api
 
 - Support Dark mode 
 
+- Check internet connection
 
 
 
