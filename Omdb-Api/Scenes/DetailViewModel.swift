@@ -37,9 +37,8 @@ class DetailViewModel: StatefulViewModel<DetailState.Change> {
     func movieDetail(){
         OmdbRequest.shared.movieDetail(with: state.moviId) { [weak self] result in
             switch result{
-            case .success(let movies):
-                self?.moveDetail = movies
-                print("movie is : \(movies)")
+            case .success(let movie):
+                self?.moveDetail = movie
                 self?.emit(change: .fetchDetail)
             case .failure(let error):
                 print(error)

@@ -7,19 +7,24 @@
 
 import UIKit
 import NVActivityIndicatorView
+import Loaf
 
 class MainViewController: UIViewController {
 
     let viewModel = MainViewModel(state: .init())
     let router = MainRouter()
-    var testData = ["asdasd","asdasd","asdasd","asdasd","asdasd","asdasd","asdasd","asdasd","asdasd"]
     
     
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     private var indicator: NVActivityIndicatorView = {
-        let indicator = NVActivityIndicatorView(frame: .zero, type: .ballPulseSync, color: Theme.color.accent , padding: 0)
+        let indicator = NVActivityIndicatorView(
+            frame: .zero,
+            type: .ballPulseSync,
+            color: Theme.color.accent ,
+            padding: 0
+        )
         indicator.translatesAutoresizingMaskIntoConstraints = false
         return indicator
     }()
@@ -32,7 +37,6 @@ class MainViewController: UIViewController {
         router.viewController = self
         setupUI()
         configureViewModel()
-        viewModel.searchMovie()
     }
 
     // MARK: - Setup
@@ -46,8 +50,9 @@ class MainViewController: UIViewController {
         )
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.rowHeight = 80
-
+        tableView.rowHeight = 120
+      
+        searchBar.searchTextField.textColor = Theme.color.textColor
         searchBar.barTintColor = Theme.color.accent
         view.backgroundColor = Theme.color.accent
         self.view.addSubview(indicator)
@@ -58,7 +63,7 @@ class MainViewController: UIViewController {
             indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         self.navigationItem.title = "Movies"
-        
+        self.indicator.startAnimating()
     }
 
     private func configureViewModel() {
@@ -66,8 +71,19 @@ class MainViewController: UIViewController {
             guard let self = self else { return }
             DispatchQueue.main.async {
                 switch change {
+                case .showIndicator:
+                    self.indicator.startAnimating()
+                case .hideIndicator:
+                    self.indicator.stopAnimating()
                 case .reloadData:
                     self.tableView.reloadData()
+                case .noMovie:
+                    Loaf(
+                        "Upps Something wrong.",
+                        state: .custom(.init(backgroundColor: .red)),
+                        location: .top,
+                        sender: self
+                    ).show()
                 }
             }
         }
@@ -77,12 +93,12 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.moviesTest.count
+        return viewModel.moviesList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier , for: indexPath) as! MainTableViewCell
-        cell.movieNameLabel.text = viewModel.moviesTest[indexPath.row].title
+        cell.configure(with: viewModel.moviesList[indexPath.row])
         cell.selectionStyle = .none
         cell.backgroundColor = indexPath.row % 2 != 0 ? UIColor(named: "Cell1Bg") : UIColor(named: "Cell2Bg")
         return cell
@@ -94,10 +110,10 @@ extension MainViewController: UITableViewDataSource {
 extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.router.routeToDetail(movieId: viewModel.moviesTest[indexPath.row].imdbID!)
+        self.router.routeToDetail(movieId: viewModel.moviesList[indexPath.row].imdbID!)
         FirebaseManager.shared.logFilmDetails(
-            title: viewModel.moviesTest[indexPath.row].title ?? "",
-            year: viewModel.moviesTest[indexPath.row].year ?? ""
+            title: viewModel.moviesList[indexPath.row].title ?? "",
+            year: viewModel.moviesList[indexPath.row].year ?? ""
         )
     }
     
@@ -105,9 +121,14 @@ extension MainViewController: UITableViewDelegate {
 
 // MARK: - UISearchBarDelegate
 extension MainViewController: UISearchBarDelegate {
+      
+
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchBarText = searchBar.text, !searchBarText.isEmpty  else { return }
-        viewModel.searchQuery  = searchBarText
+        viewModel.searchQuery = searchBarText
         viewModel.searchMovie()
+        self.searchBar.endEditing(true)
+        
     }
+    
 }

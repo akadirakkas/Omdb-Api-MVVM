@@ -50,7 +50,7 @@ class SplashViewController: UIViewController {
             indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
-        self.navigationItem.title = "Loodos"
+        self.navigationItem.title = "OMDB"
        
     }
     
@@ -59,17 +59,14 @@ class SplashViewController: UIViewController {
             guard let self = self else { return }
             DispatchQueue.main.async {
                 switch change {
-                case .checkConnection:
-                    self.indicator.startAnimating()
+                    
                 case .connected:
-                    self.indicator.stopAnimating()
                     Loaf(
                         "Internet connection is on.",
                         state: .custom(.init(backgroundColor: .blue)),
                         sender: self
                     ).show()
                 case .noConnect:
-                    self.indicator.stopAnimating()
                     Loaf(
                         "There's no internet connection.",
                         state: .custom(.init(backgroundColor: .red)),

@@ -19,6 +19,7 @@
 		131B4138291024C0004816F8 /* OmdbRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131B4137291024C0004816F8 /* OmdbRequest.swift */; };
 		135DFEA8290E7BA80015B2A3 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135DFEA6290E7BA80015B2A3 /* MainTableViewCell.swift */; };
 		135DFEA9290E7BA80015B2A3 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135DFEA7290E7BA80015B2A3 /* MainTableViewCell.xib */; };
+		1376C4F729127A9600DD1071 /* Strig+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1376C4F629127A9600DD1071 /* Strig+Extension.swift */; };
 		1385BBBE290D59D0004D1A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BBBD290D59D0004D1A55 /* AppDelegate.swift */; };
 		1385BBC0290D59D0004D1A55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BBBF290D59D0004D1A55 /* SceneDelegate.swift */; };
 		1385BBC7290D59D2004D1A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1385BBC6290D59D2004D1A55 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		1385BBFC290D5CB1004D1A55 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BBF8290D5CB1004D1A55 /* SplashViewController.swift */; };
 		1385BBFD290D5CB1004D1A55 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BBF9290D5CB1004D1A55 /* SplashViewModel.swift */; };
 		1385BBFE290D5CB1004D1A55 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1385BBFA290D5CB1004D1A55 /* SplashViewController.xib */; };
+		13CFAA50291268D500FFF75F /* AppDelegateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CFAA4F291268D500FFF75F /* AppDelegateExtensions.swift */; };
 		13DA6842290D64EB0054C010 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13DA6841290D64EB0054C010 /* GoogleService-Info.plist */; };
 		13E85ED529111A170023B137 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E85ED129111A170023B137 /* DetailRouter.swift */; };
 		13E85ED629111A170023B137 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E85ED229111A170023B137 /* DetailViewController.swift */; };
@@ -61,6 +63,7 @@
 		131B4137291024C0004816F8 /* OmdbRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbRequest.swift; sourceTree = "<group>"; };
 		135DFEA6290E7BA80015B2A3 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		135DFEA7290E7BA80015B2A3 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		1376C4F629127A9600DD1071 /* Strig+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strig+Extension.swift"; sourceTree = "<group>"; };
 		1385BBBA290D59D0004D1A55 /* Omdb-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omdb-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1385BBBD290D59D0004D1A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1385BBBF290D59D0004D1A55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		1385BBF8290D5CB1004D1A55 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		1385BBF9290D5CB1004D1A55 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		1385BBFA290D5CB1004D1A55 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		13CFAA4F291268D500FFF75F /* AppDelegateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtensions.swift; sourceTree = "<group>"; };
 		13DA6841290D64EB0054C010 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13E85ED129111A170023B137 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		13E85ED229111A170023B137 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +265,8 @@
 				1385BBED290D5C35004D1A55 /* UIColor+Extensions.swift */,
 				1385BBEF290D5C35004D1A55 /* UIFont+Extensions.swift */,
 				1308F61229102249002D0212 /*  Int+Extension.swift */,
+				13CFAA4F291268D500FFF75F /* AppDelegateExtensions.swift */,
+				1376C4F629127A9600DD1071 /* Strig+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -452,6 +458,7 @@
 				1385BBE4290D5B08004D1A55 /* BaseViewController.swift in Sources */,
 				1385BBE9290D5BE2004D1A55 /* Theme.swift in Sources */,
 				1385BBFC290D5CB1004D1A55 /* SplashViewController.swift in Sources */,
+				1376C4F729127A9600DD1071 /* Strig+Extension.swift in Sources */,
 				1385BBE6290D5B08004D1A55 /* BaseNavigationController.swift in Sources */,
 				1308F60E29102051002D0212 /* MovieResult.swift in Sources */,
 				135DFEA8290E7BA80015B2A3 /* MainTableViewCell.swift in Sources */,
@@ -466,6 +473,7 @@
 				131B4138291024C0004816F8 /* OmdbRequest.swift in Sources */,
 				1385BBFD290D5CB1004D1A55 /* SplashViewModel.swift in Sources */,
 				1385BBF4290D5C35004D1A55 /* UIFont+Extensions.swift in Sources */,
+				13CFAA50291268D500FFF75F /* AppDelegateExtensions.swift in Sources */,
 				1308F61129102192002D0212 /* OMDbEndpoint.swift in Sources */,
 				1385BBBE290D59D0004D1A55 /* AppDelegate.swift in Sources */,
 				1385BBFB290D5CB1004D1A55 /* SplashRouter.swift in Sources */,

@@ -12,7 +12,6 @@ import FirebaseRemoteConfig
 struct SplashState {
     
     enum Change: StateChange {
-        case checkConnection
         case connected
         case noConnect
         case fetchingRemote
@@ -30,8 +29,8 @@ class SplashViewModel: StatefulViewModel<SplashState.Change> {
     var isReachableOnCellular: Bool = true
     private let remoteConfig = RemoteConfig.remoteConfig()
     var remoteText: String?
-    // MARK: - Initialization
     
+    // MARK: - Initialization
     init(state: SplashState) {
         self.state = state
         super.init()
@@ -39,10 +38,8 @@ class SplashViewModel: StatefulViewModel<SplashState.Change> {
     }
     
     // MARK: - Actions
-    
     func startMonitoring() {
         monitor.pathUpdateHandler = { [weak self] path in
-            self?.emit(change: .checkConnection)
             self?.status = path.status
             self?.isReachableOnCellular = path.isExpensive
             if path.status == .satisfied {
@@ -72,7 +69,7 @@ class SplashViewModel: StatefulViewModel<SplashState.Change> {
             self.remoteConfig.fetch(withExpirationDuration: 0) { [self] status, error in
                 guard error == nil else { return }
                 remoteConfig.activate()
-                self.remoteText =  remoteConfig.configValue(forKey: "LoodosApp").stringValue ?? "dfasdfsfds"
+                self.remoteText =  remoteConfig.configValue(forKey: "LoodosApp").stringValue ?? ""
                 self.emit(change: .fetchedRemote)
             }
         }
