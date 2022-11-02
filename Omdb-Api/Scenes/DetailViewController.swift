@@ -45,6 +45,8 @@ class DetailViewController: BaseViewController {
     private func setupUI() {
         movieImage.layer.cornerRadius = 12
         movieImage.layer.masksToBounds = true
+        view.backgroundColor = Theme.color.accent
+        self.navigationItem.title = "Movie Detail"
     }
     
     func configureUI() {

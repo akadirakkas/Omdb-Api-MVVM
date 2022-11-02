@@ -79,7 +79,7 @@ class MainViewController: UIViewController {
                     self.tableView.reloadData()
                 case .noMovie:
                     Loaf(
-                        "Upps Something wrong.",
+                        "Upps we can't find anything.",
                         state: .custom(.init(backgroundColor: .red)),
                         location: .top,
                         sender: self
