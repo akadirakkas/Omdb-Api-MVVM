@@ -20,6 +20,7 @@ struct Theme {
         let accent = UIColor(named: "AccentColor") ?? .hex("#CCE2FC")
         let background = UIColor(named: "VİewBG") ?? .hex("#FCFCFC")
         let textColor = UIColor(named: "TextColor") ?? .hex("#4C72A1")
+        let indicator = UIColor(named: "indicator") ?? .hex("1DAEFF")
         private init() {}
     }
 

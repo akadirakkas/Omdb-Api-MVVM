@@ -13,7 +13,7 @@ class FirebaseManager {
 
 
     public func logFilmDetails(title: String, year: String) {
-        Analytics.logEvent("id_\(title.replacingOccurrences(of: " ", with: "_"))", parameters: [
+        Analytics.logEvent("\(title.replacingOccurrences(of: " ", with: "+"))", parameters: [
             "year": year,
         ])
     }

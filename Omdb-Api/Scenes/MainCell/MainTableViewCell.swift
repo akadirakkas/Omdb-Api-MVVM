@@ -25,7 +25,7 @@ class MainTableViewCell: UITableViewCell {
         movieNameLabel.text = model.title
         movieImage?.sd_setImage(
             with: URL(string: model.poster!),
-            placeholderImage:  UIImage(named: "aaaa")
+            placeholderImage:  UIImage(named: "movie")
         )
         typeLabel.text = model.type?.rawValue.capitalizingFirstLetter()
         yearLabel.text = model.year

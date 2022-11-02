@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
         let indicator = NVActivityIndicatorView(
             frame: .zero,
             type: .ballPulseSync,
-            color: Theme.color.accent ,
+            color: Theme.color.indicator ,
             padding: 0
         )
         indicator.translatesAutoresizingMaskIntoConstraints = false

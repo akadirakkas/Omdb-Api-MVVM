@@ -15,7 +15,12 @@ class SplashViewController: UIViewController {
     let router = SplashRouter()
     
     private var indicator: NVActivityIndicatorView = {
-        let indicator = NVActivityIndicatorView(frame: .zero, type: .ballRotateChase, color: .red , padding: 0)
+        let indicator = NVActivityIndicatorView(
+            frame: .zero,
+            type: .ballRotateChase,
+            color: Theme.color.indicator ,
+            padding: 0
+        )
         indicator.translatesAutoresizingMaskIntoConstraints = false
         return indicator
     }()
